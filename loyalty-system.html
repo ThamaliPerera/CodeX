@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Loyalty Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Loyalty Rewards</h1>
+        </header>
+
+        <!-- Customer Profile Section -->
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="/api/placeholder/80/80" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h2 id="customerName">John Smith</h2>
+                        <p class="membership-id">Member ID: #123456</p>
+                    </div>
+                </div>
+                <div class="points-display">
+                    <div class="points-circle">
+                        <span class="points-number" id="pointsBalance">2,500</span>
+                        <span class="points-label">Points</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Points Summary Section -->
+        <section class="points-summary">
+            <h2>Points Activity</h2>
+            <div class="activity-cards">
+                <div class="activity-card">
+                    <h3>Points Earned</h3>
+                    <p class="points-value">+150</p>
+                    <p class="points-date">Last Purchase: Jan 15, 2024</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Points Used</h3>
+                    <p class="points-value">-500</p>
+                    <p class="points-date">Last Redemption: Jan 10, 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Available Discounts Section -->
+        <section class="discounts-section">
+            <h2>Available Discounts</h2>
+            <div class="discount-grid">
+                <div class="discount-card">
+                    <div class="discount-amount">10% OFF</div>
+                    <div class="points-required">500 points</div>
+                    <button class="redeem-btn">Redeem Now</button>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-amount">25% OFF</div>
+                    <div class="points-required">1000 points</div>
+                    <button class="redeem-btn">Redeem Now</button>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-amount">50% OFF</div>
+                    <div class="points-required">2000 points</div>
+                    <button class="redeem-btn">Redeem Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transaction History -->
+        <section class="history-section">
+            <h2>Points History</h2>
+            <div class="history-table-container">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Activity</th>
+                            <th>Points</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jan 15, 2024</td>
+                            <td>Purchase - Order #789</td>
+                            <td class="points-earned">+150</td>
+                            <td>2,500</td>
+                        </tr>
+                        <tr>
+                            <td>Jan 10, 2024</td>
+                            <td>Discount Redemption</td>
+                            <td class="points-used">-500</td>
+                            <td>2,350</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
